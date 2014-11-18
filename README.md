@@ -5,9 +5,9 @@
 Quick harness to create a runnable demo for ThreeJS scenes.
 
 ```js
-var OrbitViewer = require('three-orbit-viewer')(THREE)
+var createOrbitViewer = require('three-orbit-viewer')(THREE)
 
-var app = OrbitViewer({
+var app = createOrbitViewer({
     clearColor: 0x000000,
     clearAlpha: 1.0,
     fov: 65,
