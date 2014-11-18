@@ -39,6 +39,7 @@ module.exports = function(THREE) {
         var render = function(gl, width, height, dt) {
             emitter.emit('tick', dt)
             emitter.renderer.render(emitter.scene, emitter.camera)
+            emitter.emit('render', dt)
         }
 
         var resize = function(width, height) {

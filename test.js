@@ -7,7 +7,6 @@ load(path, function() {
     domready(run)
 })
 
-
 function run() {
     var THREE = window.THREE
         

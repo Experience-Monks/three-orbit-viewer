@@ -46,7 +46,7 @@ This module exports a function which accepts the THREE instance, and returns a n
 
 #### `viewer.on('tick')`
 
-Listens for tick events, dispatched with `dt` as the first and only parameter.
+Listens for tick events before render, dispatched with `dt` as the first and only parameter. Alternatively, you can use `on('render')` for events called after the renderer has finished.
 
 #### `viewer.on('resize')`
 
