@@ -22,10 +22,6 @@ app.scene.add(box)
 app.on('tick', function(dt) {
     //.. handle pre-render updates    
 })
-
-app.on('ready', function() {
-    //.. handle DOM ready 
-})
 ```
 
 ## Usage
