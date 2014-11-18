@@ -34,6 +34,8 @@ This module exports a function which accepts the THREE instance, and returns a n
 
 
 - `fov` field of view, defaults to 50
+- `near` the near z depth for the camera, defaults to 0.1
+- `far` the far z depth for the camera, defaults to 1000
 - `clearColor` the THREE.Color or hex code, default black
 - `clearAlpha` the alpha, default 0
 - `position` THREE.Vector3 for the initial camera position, defaults to [1, 1, -2]
