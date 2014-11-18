@@ -1,0 +1,41 @@
+{
+  "name": "three-orbit-viewer",
+  "version": "1.0.0",
+  "description": "quick harness for viewing a mesh with orbit viewer",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "as-number": "^1.0.0",
+    "canvas-app": "^2.4.0",
+    "events": "^1.0.2",
+    "three-orbit-controls": "^0.69.0",
+    "xtend": "^4.0.0"
+  },
+  "devDependencies": {
+    "domready": "^1.0.7",
+    "eases": "^1.0.2",
+    "scriptjs": "^2.5.7"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "orbit",
+    "viewer",
+    "three",
+    "js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/three-orbit-viewer.git"
+  },
+  "homepage": "https://github.com/mattdesl/three-orbit-viewer",
+  "bugs": {
+    "url": "https://github.com/mattdesl/three-orbit-viewer/issues"
+  }
+}
