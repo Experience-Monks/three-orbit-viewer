@@ -2,6 +2,7 @@ var createApp = require('canvas-app')
 var createControls = require('three-orbit-controls')
 var Emitter = require('events/')
 var xtend = require('xtend')
+var number = require('as-number')
 
 module.exports = function(THREE) {
     var OrbitControls = createControls(THREE)
@@ -22,9 +23,12 @@ module.exports = function(THREE) {
             var clearAlpha = opt.clearAlpha||0
             emitter.renderer.setClearColor(clearColor, clearAlpha)
 
-            var fov = typeof opt.fov === 'number' ? opt.fov : 50
+            var fov = number(opt.fov, 50)
+            var near = number(opt.near, 0.1)
+            var far = number(opt.far, 1000)
+            
             emitter.scene = new THREE.Scene()
-            emitter.camera = new THREE.PerspectiveCamera(fov, width/height, 1, 1000)
+            emitter.camera = new THREE.PerspectiveCamera(fov, width/height, near, far)
             
             var position = opt.position || new THREE.Vector3(1, 1, -2)
             var target = opt.target || new THREE.Vector3()

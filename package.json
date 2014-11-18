@@ -10,6 +10,7 @@
     "url": "https://github.com/mattdesl"
   },
   "dependencies": {
+    "as-number": "^1.0.0",
     "canvas-app": "^2.4.0",
     "events": "^1.0.2",
     "three-orbit-controls": "~0.69.0",
