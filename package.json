@@ -12,7 +12,7 @@
   "dependencies": {
     "canvas-app": "^2.4.0",
     "events": "^1.0.2",
-    "three-orbit-controls": "^0.69.0",
+    "three-orbit-controls": "~0.69.0",
     "xtend": "^4.0.0"
   },
   "devDependencies": {
