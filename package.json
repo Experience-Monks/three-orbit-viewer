@@ -1,6 +1,6 @@
 {
   "name": "three-orbit-viewer",
-  "version": "0.69.0",
+  "version": "0.69.1",
   "description": "quick harness for viewing a mesh with orbit viewer",
   "main": "index.js",
   "license": "MIT",
