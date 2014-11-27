@@ -12,9 +12,9 @@ module.exports = function(THREE) {
         var emitter = new Emitter()
 
         var setup = function(gl, width, height) {
-            emitter.renderer = new THREE.WebGLRenderer({
+            emitter.renderer = new THREE.WebGLRenderer(xtend(opt, {
                 canvas: gl.canvas
-            })
+            }))
 
             var clearColor = 0x000000
             if (opt.clearColor || typeof opt.clearColor === 'number')
