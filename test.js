@@ -9,13 +9,17 @@ load(path, function() {
 
 function run() {
     var THREE = window.THREE
-        
+
     var OrbitViewer = require('./')(THREE)
     var app = OrbitViewer({
         clearColor: 0x000000,
         clearAlpha: 1.0,
         fov: 65,
-        position: new THREE.Vector3(1, 1, -2)
+        position: new THREE.Vector3(1, 1, -2),
+        contextAttributes: {
+            antialias: false,
+            alpha: false
+        }
     })
 
     var geo = new THREE.BoxGeometry(1,1,1)

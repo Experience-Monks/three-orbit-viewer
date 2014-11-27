@@ -39,7 +39,7 @@ This module exports a function which accepts the THREE instance, and returns a n
 - `clearAlpha` the alpha, default 0
 - `position` THREE.Vector3 for the initial camera position, defaults to [1, 1, -2]
 - `target` THREE.Vector3 for the initial orbit controller's target
-- other options that could be passed into THREE.WebGLRenderer or [canvas-app](https://www.npmjs.org/package/canvas-app)
+- other options that could be passed into [canvas-app](https://www.npmjs.org/package/canvas-app)
 
 #### `viewer.on('tick')`
 

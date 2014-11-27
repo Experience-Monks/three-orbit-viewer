@@ -11,8 +11,11 @@ module.exports = function(THREE) {
 
         var emitter = new Emitter()
 
+
+        var ctxAttrib = opt.contextAttributes || {}
+
         var setup = function(gl, width, height) {
-            emitter.renderer = new THREE.WebGLRenderer(xtend(opt, {
+            emitter.renderer = new THREE.WebGLRenderer(xtend(ctxAttrib, {
                 canvas: gl.canvas
             }))
 
@@ -56,6 +59,7 @@ module.exports = function(THREE) {
 
             emitter.emit('resize', width, height)
         }
+
 
         var engine = createApp(render, xtend(opt, { 
             context: 'webgl',
