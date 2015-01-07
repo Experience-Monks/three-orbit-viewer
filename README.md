@@ -69,7 +69,19 @@ Instance of [three-orbit-controller](https://www.npmjs.org/package/three-orbit-c
 
 Instance of [canvas-app](https://www.npmjs.org/package/canvas-app) which you can call `stop()` and `start()` on, or access for current width/height/fps/etc.
 
-#### Versioning
+## Running the Demo
+
+To build and run the demo, git clone this repo then:
+
+```sh
+cd three-orbit-viewer
+npm install
+npm test
+```
+
+And open `localhost:9966` in your browser.
+
+## Versioning
 
 This uses an unusual versioning system to better support ThreeJS's (lack of) versioning. The major version of this repo will line up with ThreeJS releases (`69.0.0` => `r69`). The minor will be reserved for any new features, and patch for bug fixes and documentation/readme updates. In some rare cases, a minor feature may introduce a breaking change; so it's generally safest to use tilde or `save-exact` for this module.
 
