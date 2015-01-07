@@ -24,7 +24,7 @@
     "wzrd": "^1.1.1"
   },
   "scripts": {
-    "test": "wzrd demo/test.js",
+    "test": "wzrd demo/test.js"
   },
   "keywords": [
     "orbit",
