@@ -1,16 +1,11 @@
 var load = require('scriptjs')
 var ease = require('eases/expo-in-out')
 var domready = require('domready')
+var THREE = require('three')
 
-var path = 'bower_components/three.js/build/three.js'
-load(path, function() {
-    domready(run)
-})
-
+domready(run)
 function run() {
-    var THREE = window.THREE
-
-    var OrbitViewer = require('./')(THREE)
+    var OrbitViewer = require('../')(THREE)
     var app = OrbitViewer({
         clearColor: 0x000000,
         clearAlpha: 1.0,
