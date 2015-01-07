@@ -32,10 +32,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mattdesl/three-orbit-viewer.git"
+    "url": "git://github.com/Jam3/three-orbit-viewer.git"
   },
-  "homepage": "https://github.com/mattdesl/three-orbit-viewer",
+  "homepage": "https://github.com/Jam3/three-orbit-viewer",
   "bugs": {
-    "url": "https://github.com/mattdesl/three-orbit-viewer/issues"
+    "url": "https://github.com/Jam3/three-orbit-viewer/issues"
   }
 }

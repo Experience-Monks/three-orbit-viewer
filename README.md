@@ -2,7 +2,7 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-Quick harness to create a runnable demo for ThreeJS scenes. For a complete demo, see [three-gl-state-example](https://github.com/mattdesl/three-gl-state-example).
+Quick harness to create a runnable demo for ThreeJS scenes. For a complete demo, see [three-gl-state-example](https://github.com/Jam3/three-gl-state-example).
 
 ```js
 var createOrbitViewer = require('three-orbit-viewer')(THREE)
@@ -75,4 +75,4 @@ This uses an unusual versioning system to better support ThreeJS's (lack of) ver
 
 ## License
 
-MIT, see [LICENSE.md](http://github.com/mattdesl/three-orbit-viewer/blob/master/LICENSE.md) for details.
+MIT, see [LICENSE.md](http://github.com/Jam3/three-orbit-viewer/blob/master/LICENSE.md) for details.
