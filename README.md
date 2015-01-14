@@ -2,6 +2,8 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
+[(click here for a demo)](http://jam3.github.io/three-orbit-viewer/demo/index.html)
+
 Quick harness to create a runnable demo for ThreeJS scenes. For a demo, see [demo/test.js](demo/test.js) or [three-gl-state-example](https://github.com/mattdesl/three-gl-state-example).
 
 ```js
