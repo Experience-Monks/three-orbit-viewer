@@ -1,4 +1,3 @@
-var load = require('scriptjs')
 var ease = require('eases/expo-in-out')
 var domready = require('domready')
 var THREE = require('three')
