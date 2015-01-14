@@ -81,6 +81,10 @@ npm test
 
 And open `localhost:9966` in your browser.
 
+## Building / Testing
+
+To build from source, git clone and `npm install` local dependencies, then run `npm start` to run a development server on `localhost:9966` or `npm run build` to create a compressed bundle of the [demo source](demo/test.js). 
+
 ## Versioning
 
 This uses an unusual versioning system to better support ThreeJS's (lack of) versioning. The major version of this repo will line up with ThreeJS releases (`69.0.0` => `r69`). The minor will be reserved for any new features, and patch for bug fixes and documentation/readme updates. In some rare cases, a minor feature may introduce a breaking change; so it's generally safest to use tilde or `save-exact` for this module.
