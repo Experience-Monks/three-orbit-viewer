@@ -24,7 +24,8 @@
     "wzrd": "^1.1.1"
   },
   "scripts": {
-    "test": "wzrd demo/test.js"
+    "test": "wzrd demo/test.js",
+    "build": "browserify demo/test.js | uglifyjs -cm > demo/bundle.js"
   },
   "keywords": [
     "orbit",
