@@ -53,7 +53,7 @@ module.exports = function(THREE) {
             if (!emitter.renderer)
                 return
 
-            emitter.renderer.setViewport(0, 0, width, height)
+            emitter.renderer.setSize(width, height)
             emitter.camera.aspect = width/height
             emitter.camera.updateProjectionMatrix()
 
@@ -72,6 +72,11 @@ module.exports = function(THREE) {
         document.body.style.overflow = "hidden"
         
         setup(engine.context, engine.width, engine.height)
+        if (typeof emitter.renderer.setPixelRatio === 'function') //r70
+            emitter.renderer.setPixelRatio(engine._DPR)
+        else if (typeof emitter.renderer.devicePixelRatio === 'number') //r69
+            emitter.renderer.devicePixelRatio = engine._DPR
+        
         engine.start()
 
         return emitter

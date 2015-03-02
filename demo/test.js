@@ -16,9 +16,22 @@ function run() {
         }
     })
 
+    app.renderer.shadowMapEnabled = true
+    app.renderer.shadowMapType = THREE.PCFSoftShadowMap
+
+    var dir = new THREE.DirectionalLight(0xcfcfcf, 1)
+    dir.shadowMapWidth = dir.shadowMapHeight = 2048
+    dir.shadowCameraNear = 1
+    dir.castShadow = true
+    dir.shadowDarkness = 0.1
+    dir.shadowCameraFar = 1000
+    dir.position.set(2, 4, 0)
+    app.scene.add(dir)
+    
     var geo = new THREE.BoxGeometry(1,1,1)
-    var mat = new THREE.MeshBasicMaterial({ wireframe: true, color: 0xffffff })
+    var mat = new THREE.MeshLambertMaterial({ color: 0xffffff })
     var box = new THREE.Mesh(geo, mat)
+    box.castShadow = true
     app.scene.add(box)
 
     var time = 0
