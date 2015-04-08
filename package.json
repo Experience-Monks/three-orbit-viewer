@@ -1,6 +1,6 @@
 {
   "name": "three-orbit-viewer",
-  "version": "69.2.8",
+  "version": "69.2.9",
   "description": "quick harness for viewing a mesh with orbit viewer",
   "main": "index.js",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "eases": "^1.0.2",
     "three": "^0.70.0",
     "uglify-js": "^2.4.16",
-    "wzrd": "^1.1.1"
+    "wzrd": "^1.2.1"
   },
   "scripts": {
     "start": "wzrd demo/test.js:bundle.js",
