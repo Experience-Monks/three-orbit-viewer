@@ -6,7 +6,7 @@ domready(run)
 function run() {
     var OrbitViewer = require('../')(THREE)
     var app = OrbitViewer({
-        clearColor: 0x000000,
+        clearColor: 'rgb(50, 50, 50)',
         clearAlpha: 1.0,
         fov: 65,
         position: new THREE.Vector3(1, 1, -2),
@@ -16,16 +16,10 @@ function run() {
         }
     })
 
-    app.renderer.shadowMapEnabled = true
-    app.renderer.shadowMapType = THREE.PCFSoftShadowMap
+    app.scene.add(new THREE.AmbientLight('rgb(30, 30, 35)'))
 
     var dir = new THREE.DirectionalLight(0xcfcfcf, 1)
-    dir.shadowMapWidth = dir.shadowMapHeight = 2048
-    dir.shadowCameraNear = 1
-    dir.castShadow = true
-    dir.shadowDarkness = 0.1
-    dir.shadowCameraFar = 1000
-    dir.position.set(2, 4, 0)
+    dir.position.set(20, 40, -15)
     app.scene.add(dir)
     
     var geo = new THREE.BoxGeometry(1,1,1)
@@ -33,7 +27,7 @@ function run() {
     var box = new THREE.Mesh(geo, mat)
     box.castShadow = true
     app.scene.add(box)
-
+    
     var time = 0
     app.on('tick', function(dt) {
         time += dt/1000 
