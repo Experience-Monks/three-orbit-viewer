@@ -39,7 +39,7 @@ module.exports = function(THREE) {
             emitter.camera.position.copy(position)
             emitter.camera.lookAt(target)
 
-            emitter.controls = new OrbitControls(emitter.camera)
+            emitter.controls = new OrbitControls(emitter.camera, emitter.engine.canvas)
             emitter.controls.target.copy(target)
         }
 
