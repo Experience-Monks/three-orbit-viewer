@@ -76,7 +76,7 @@ module.exports = function(THREE) {
             emitter.renderer.setPixelRatio(engine._DPR)
         else if (typeof emitter.renderer.devicePixelRatio === 'number') //r69
             emitter.renderer.devicePixelRatio = engine._DPR
-        
+        emitter.renderer.setSize(engine.width, engine.height)
         engine.start()
 
         return emitter
