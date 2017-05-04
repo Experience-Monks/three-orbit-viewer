@@ -65,7 +65,7 @@ Instance of THREE.PerspectiveCamera
 
 #### `viewer.controller`
 
-Instance of [three-orbit-controller](https://www.npmjs.org/package/three-orbit-controller).
+Instance of [three-orbit-controls](https://www.npmjs.org/package/three-orbit-controls).
 
 #### `viewer.engine`
 
